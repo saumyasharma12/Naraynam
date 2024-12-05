@@ -1,0 +1,147 @@
+/* Container */
+.time-order-container {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 7rem;
+}
+
+/* Headings */
+.headings .small-heading {
+    padding-top: 3.3rem;
+    font-size: 1rem;
+    color: tomato;
+}
+
+.headings .large-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0.75rem;
+}
+
+/* Paragraph */
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: 1.2rem;
+}
+
+/* Icons Section */
+.icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+
+.icon-card {
+    text-align: center;
+}
+
+.icon-image {
+    width: 130px;
+    height: 130px;
+}
+
+.icon-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.icon-description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1050px) {
+    .headings .large-heading {
+        font-size: 2rem; /* Decrease font size for large heading */
+    }
+
+    .description {
+        font-size: 0.95rem; /* Reduce font size for paragraph */
+        max-width: 100%; /* Allow paragraph to use full width */
+    }
+
+    .icons-row {
+        flex-wrap: wrap; /* Allow icons to wrap into multiple rows */
+        gap: 3rem; /* Reduce gap between icons */
+    }
+
+    .icon-image {
+        width: 110px;
+        height: 110px; /* Reduce icon size */
+    }
+
+    .icon-title {
+        font-size: 1.2rem; /* Decrease icon title font size */
+    }
+
+    .icon-description {
+        font-size: 0.95rem; /* Reduce icon description font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .headings .large-heading {
+        font-size: 1.8rem; /* Further reduce large heading font size */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Further reduce paragraph font size */
+    }
+
+    .icons-row {
+        gap: 2rem; /* Decrease gap between icons */
+    }
+
+    .icon-image {
+        width: 90px;
+        height: 90px; /* Further reduce icon size */
+    }
+
+    .icon-title {
+        font-size: 1rem; /* Decrease font size of icon title */
+    }
+
+    .icon-description {
+        font-size: 0.9rem; /* Decrease font size of icon description */
+    }
+}
+
+@media (max-width: 480px) {
+    .headings .large-heading {
+        font-size: 1.5rem; /* Decrease font size for small screens */
+    }
+
+    .description {
+        font-size: 0.85rem; /* Smaller font size for paragraph */
+    }
+
+    .icons-row {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 1.5rem; /* Reduce gap */
+    }
+
+    .icon-image {
+        width: 80px;
+        height: 80px; /* Reduce icon size */
+    }
+
+    .icon-title {
+        font-size: 0.9rem; /* Reduce icon title font size */
+    }
+
+    .icon-description {
+        font-size: 0.8rem; /* Reduce icon description font size */
+    }
+}

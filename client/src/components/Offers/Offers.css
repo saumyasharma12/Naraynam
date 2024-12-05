@@ -1,0 +1,189 @@
+/* Container styles */
+.offers-container {
+    text-align: center;
+    padding-top: 9rem;
+}
+
+.small-heading {
+    font-size: 1.5rem; /* Larger small heading */
+    color: tomato;
+    margin-bottom: 0.5rem;
+}
+
+.main-heading {
+    font-size: 3rem; /* Increased size */
+    margin: 1rem 0;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.description {
+    font-size: 1.1rem; /* Slightly larger text */
+    color: #555;
+    margin: 1.5rem auto 2.5rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 600px; /* Centers with a fixed width */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 5.5rem; /* Added spacing between cards */
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem;
+    width: 240px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.big-card {
+    width: 300px; /* Larger width for the middle card */
+    background-color: #4caf50;
+    color: white;
+}
+
+.card h2 {
+    font-size: 1.8rem; /* Increased heading size */
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2rem; /* Larger price text */
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 1rem;
+}
+
+.big-card .price {
+    color: white; /* White color for Pro card price */
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left; /* Align items to the left */
+    padding-left: 2rem; /* Indentation for better readability */
+}
+
+.card li {
+    font-size: 1rem; /* Larger list item font */
+    color: #555;
+    margin: 0.5rem 0;
+    line-height: 1.6; /* Improve spacing for readability */
+}
+
+.big-card li {
+    color: white; /* White text for Pro card list items */
+}
+
+.start-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem; /* Larger button */
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.big-card .start-button {
+    background-color: white;
+    color: #4caf50;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .main-heading {
+        font-size: 2.5rem; /* Smaller heading for medium screens */
+    }
+
+    .description {
+        font-size: 1rem; /* Adjust description text for medium screens */
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 220px; /* Reduce card size for medium screens */
+    }
+
+    .big-card {
+        width: 280px; /* Adjust big card size */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2rem; /* Smaller heading for smaller screens */
+    }
+
+    .description {
+        font-size: 0.95rem; /* Slightly smaller description text */
+        margin: 1.5rem 1rem 2rem; /* Adjust margins */
+    }
+
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 1rem; /* Adjust gap for stacked cards */
+    }
+
+    .card {
+        width: 100%; /* Make cards full width on smaller screens */
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    .big-card {
+        width: 100%; /* Make big card full width */
+    }
+
+    .start-button {
+        font-size: 1rem; /* Smaller button on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 1.8rem; /* Smaller heading for mobile screens */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Further reduce description font */
+    }
+
+    .card h2 {
+        font-size: 1.5rem; /* Smaller card heading */
+    }
+
+    .price {
+        font-size: 1.8rem; /* Smaller price font */
+    }
+
+    .card li {
+        font-size: 0.9rem; /* Smaller list item font */
+    }
+
+    .start-button {
+        padding: 0.6rem 1.2rem; /* Smaller button */
+    }
+
+    .cards-container {
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .big-card {
+        width: 100%; /* Make big card full width */
+    }
+}

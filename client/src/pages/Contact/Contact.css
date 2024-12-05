@@ -1,0 +1,165 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.map-container {
+  width: 130%;
+  margin-bottom: 2rem;
+}
+
+/* Contact Headings */
+.contact-headings {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-headings h5 {
+  text-transform: uppercase;
+  color: tomato;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-headings h2 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-label {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: tomato;
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+/* Button Styles */
+.form-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: tomato;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 1050px) {
+  .contact-headings h2 {
+      font-size: 2.5rem; /* Decrease font size for the heading */
+  }
+
+  .contact-headings h5 {
+      font-size: 1rem; /* Adjust the smaller heading font size */
+  }
+
+  .map-container {
+      width: 100%; /* Adjust map container width for smaller screens */
+  }
+
+  .contact-form {
+      max-width: 450px; /* Slightly reduce the form width */
+  }
+
+  .form-input,
+  .form-textarea {
+      font-size: 0.95rem; /* Slightly reduce input and textarea font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-headings h2 {
+      font-size: 2rem; /* Further reduce font size */
+  }
+
+  .contact-headings h5 {
+      font-size: 0.9rem; /* Reduce heading font size */
+  }
+
+  .contact-form {
+      max-width: 400px; /* Reduce form width for tablets */
+  }
+
+  .form-input,
+  .form-textarea {
+      font-size: 0.9rem; /* Further reduce input font size */
+  }
+
+  .form-button {
+      padding: 1rem; /* Increase button padding for better touch interaction */
+      font-size: 1.1rem; /* Increase button font size for clarity */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-headings h2 {
+      font-size: 1.8rem; /* Further decrease font size for small screens */
+  }
+
+  .contact-headings h5 {
+      font-size: 0.8rem; /* Reduce heading font size */
+  }
+
+  .contact-form {
+      max-width: 100%; /* Full width for the form on small screens */
+  }
+
+  .form-input,
+  .form-textarea {
+      font-size: 0.85rem; /* Decrease font size */
+  }
+
+  .form-button {
+      padding: 1.2rem; /* Larger button padding for touch screens */
+      font-size: 1.2rem; /* Larger button font size */
+  }
+}

@@ -1,0 +1,97 @@
+.information-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+.info-item {
+  text-align: center;
+  max-width: 200px;
+  margin: 1rem; /* Added margin for spacing */
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8; /* Increase line height for more spacing */
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1050px) {
+  .info-item {
+      max-width: 150px; /* Adjust item width for medium screens */
+  }
+
+  h3 {
+      font-size: 1.1rem; /* Adjust font size for heading */
+  }
+
+  p {
+      font-size: 0.95rem; /* Adjust paragraph font size */
+  }
+
+  .icon {
+      width: 70px; /* Adjust icon size */
+      height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .information-container {
+      justify-content: center; /* Center items on smaller screens */
+  }
+
+  .info-item {
+      max-width: 100%; /* Allow info items to take full width */
+      margin: 1rem 0; /* Ensure margin for spacing */
+  }
+
+  h3 {
+      font-size: 1rem; /* Further reduce font size for heading */
+  }
+
+  p {
+      font-size: 0.9rem; /* Further adjust font size */
+  }
+
+  .icon {
+      width: 60px; /* Smaller icons on mobile */
+      height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-item {
+      max-width: 100%; /* Full-width items for small mobile screens */
+      margin: 1rem 0; /* Ensure spacing */
+  }
+
+  h3 {
+      font-size: 0.9rem; /* Reduce heading size for very small screens */
+  }
+
+  p {
+      font-size: 0.85rem; /* Smaller paragraph text */
+  }
+
+  .icon {
+      width: 50px; /* Smaller icon size */
+      height: 50px;
+  }
+}

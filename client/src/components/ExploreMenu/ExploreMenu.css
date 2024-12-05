@@ -1,0 +1,135 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.explore-menu h1 {
+    padding-top: 2rem;
+    color: #262626;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.explore-menu-text {
+    max-width: 60%;
+    color: #808080;
+}
+
+.explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+.explore-menu hr {
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.explore-menu-list-item .active {
+    border: 4px solid tomato;
+    padding: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 1050px) {
+    .explore-menu h1 {
+        font-size: 2.8rem; /* Adjust header font size */
+    }
+
+    .explore-menu-text {
+        max-width: 90%;
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .explore-menu-list {
+        gap: 15px; /* Smaller gap for medium screens */
+    }
+
+    .explore-menu-list-item img {
+        width: 10vw; /* Adjust image size for medium screens */
+    }
+
+    .explore-menu-list-item p {
+        font-size: 1.2rem; /* Adjust text size */
+    }
+}
+
+@media (max-width: 768px) {
+    .explore-menu h1 {
+        font-size: 2.2rem; /* Smaller heading for smaller screens */
+    }
+
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 13px; /* Adjust font size further for smaller screens */
+    }
+
+    .explore-menu-list {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 20px;
+    }
+
+    .explore-menu-list-item img {
+        width: 20vw; /* Increase image size for mobile screens */
+        min-width: 60px; /* Ensure minimum size */
+    }
+
+    .explore-menu-list-item p {
+        font-size: 1rem; /* Further reduce text size */
+    }
+
+    .explore-menu {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .explore-menu h1 {
+        font-size: 1.8rem; /* Even smaller heading for mobile */
+    }
+
+    .explore-menu-text {
+        font-size: 12px; /* Further reduce text size */
+    }
+
+    .explore-menu-list-item img {
+        width: 25vw; /* Larger image size for mobile */
+    }
+
+    .explore-menu-list-item p {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+
+    .explore-menu {
+        padding: 0.5rem; /* Reduce padding */
+    }
+}

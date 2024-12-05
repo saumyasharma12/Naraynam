@@ -1,0 +1,135 @@
+.about-container {
+  padding: 4rem 1.5rem;
+  background-color: #f7fafc; /* Light gray background */
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2d3748; /* Dark text */
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  color: #4a5568; /* Gray text */
+  margin-bottom: 2rem;
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-story {
+  margin-top: 2rem;
+}
+
+.story-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2d3748; /* Dark text */
+    margin-bottom: 1rem;
+}
+
+.story-description {
+  font-size: 1.125rem;
+  color: #4a5568;
+}
+
+.narayan {
+    font-size: 25px;
+    color: tomato;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 1050px) {
+  .about-title {
+    font-size: 2rem; /* Adjust title font size */
+  }
+
+  .about-description {
+    font-size: 1rem; /* Adjust description font size */
+    max-width: 90%; /* Allow description to take up more space on smaller screens */
+  }
+
+  .about-image {
+    max-width: 80%; /* Adjust image size for smaller screens */
+  }
+
+  .story-title {
+    font-size: 2.2rem; /* Smaller story title */
+  }
+
+  .story-description {
+    font-size: 1rem; /* Adjust story description font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.8rem; /* Further reduce font size for mobile */
+  }
+
+  .about-description {
+    font-size: 0.95rem; /* Smaller font size */
+  }
+
+  .about-image {
+    max-width: 100%; /* Full-width image on mobile */
+  }
+
+  .story-title {
+    font-size: 1.8rem; /* Adjust story title size for mobile */
+  }
+
+  .story-description {
+    font-size: 0.95rem; /* Adjust story description for smaller screens */
+  }
+
+  .narayan {
+    font-size: 20px; /* Smaller text for Narayan */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.5rem; /* Even smaller title for mobile */
+  }
+
+  .about-description {
+    font-size: 0.85rem; /* Further reduce font size */
+  }
+
+  .about-image {
+    max-width: 100%; /* Ensure image fits on mobile */
+  }
+
+  .story-title {
+    font-size: 1.5rem; /* Smaller story title */
+  }
+
+  .story-description {
+    font-size: 0.85rem; /* Smaller story description for mobile */
+  }
+
+  .narayan {
+    font-size: 18px; /* Even smaller Narayan text */
+  }
+}

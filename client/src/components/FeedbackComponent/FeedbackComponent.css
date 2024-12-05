@@ -1,0 +1,36 @@
+/* Images container styling */
+.feedback-images-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px; /* Increased gap between stat items */
+  padding-top: 190px;
+}
+
+/* Individual stat items */
+.stat-item {
+  text-align: center;
+  width: 150px;
+}
+
+/* Image styling */
+.stat-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px; /* Space between the image and the number */
+}
+
+/* Large number styling */
+.stat-number {
+  font-size: 2.5rem; /* Larger font size for numbers */
+  font-weight: bold;
+  color: black; /* Green color for emphasis */
+  margin-bottom: 10px; /* Space between the number and the title */
+}
+
+/* Title styling */
+.stat-title {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
