@@ -1,5 +1,5 @@
 import React from 'react';
-import './hero.css';
+import './Hero.css';
 import { assets, menu_list } from '../../assets/assets';
 import ExploreMenu from "../ExploreMenu/ExploreMenu"
 
